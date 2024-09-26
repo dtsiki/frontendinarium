@@ -15,17 +15,7 @@ const nextConfig = {
 
 const withMDX = createMDX({
     extension: /\.mdx?$/,
-    options: {
-      remarkPlugins: [],
-      rehypePlugins: [],
-      providerImportSource: '@mdx-js/react',
-    },
     pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
 });
 
 export default withMDX(nextConfig);
-//module.exports = withMDX(nextConfig)
-
-/*
-export default withMdx({})(nextConfig);
-*/
